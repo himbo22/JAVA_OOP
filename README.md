@@ -1,3 +1,19 @@
+- [Bài 1](#bài-1)
+- [Bài 2](#bài-2)
+- [Bài 3](#bài-3)
+- [Bài 4](#bài-4)
+- [Bài 5](#bài-5)
+- [Bài 6](#bài-6)
+- [Bài 7](#bài-7)
+- [Bài 8](#bài-8)
+- [Bài 9](#bài-9)
+- [Bài 10](#bài-10)
+- [Bài 11](#bài-11)
+- [Bài 12](#bài-12)
+- [Bài 13](#bài-13)
+- [Bài 14](#bài-14)
+- [Bài 15](#bài-15)
+
 # Bài 1
 Một đơn vị sản xuất gồm có các cán bộ là công nhân, kỹ sư, nhân viên. Mỗi cán bộ cần quản lý các dữ liệu: Họ tên, tuổi, giới tính(name, nữ, khác), địa chỉ.
 
@@ -179,38 +195,38 @@ Yêu cầu 2: Xây dựng lớp QLPTGT có các chức năng:
 # Bài 13
 Phần mềm quản lý nhân viên của công ty được mô tả nghiệp vụ như sau:
 
-Mỗi nhân viên (Employee) được công ty chia thành 3 loại sau: Nhân viên có kinh nghiệm lâu năm (Experience), nhân viên mới ra trường (Fresher) , Nhân viên thực tập (Intern)
+Mỗi nhân viên (**Employee**) được công ty chia thành 3 loại sau: Nhân viên có kinh nghiệm lâu năm (**Experience**), nhân viên mới ra trường (**Fresher**) , Nhân viên thực tập (**Intern**)
 
-            Tất cả các Employee đều có các thuộc tính là: ID, FullName, BirthDay,Phone, Email, Employee_type,Employee_count và phương thức là ShowInfo để hiển thị thông tin của nhân viên đó (hiển thị thông tin nhân viên ra màn hình console).
+Tất cả các **Employee** đều có các thuộc tính là: **ID, FullName, BirthDay,Phone, Email, Employee_type,Employee_count** và phương thức là **ShowInfo** để hiển thị thông tin của nhân viên đó (hiển thị thông tin nhân viên ra màn hình console).
 
-                        Trong đó :
+**Trong đó :**
 
-Employee_typecó giá trị tương ứng là 0: Experience, 1: Fresher , 2: Intern  (tùy vào người dùng nhập vào ứng viên loại nào)
+**Employee_type** có giá trị tương ứng là 0: **Experience**, 1: **Fresher** , 2: **Intern**  (tùy vào người dùng nhập vào ứng viên loại nào)
 
- Employee_count dùng để người dùng đếm số lượng nhân viên trong một đợt người dùng nhập nhân viên mới  vào cơ sở dữ liệu. (mỗi lần người dùng nhập thêm mới nhân viên thì thuộc tính Employee_count của class Employee sẽ tăng lên 1)
+**Employee_count** dùng để người dùng đếm số lượng nhân viên trong một đợt người dùng nhập nhân viên mới  vào cơ sở dữ liệu. (**mỗi lần người dùng nhập thêm mới nhân viên thì thuộc tính Employee_count của class Employee sẽ tăng lên 1**)
 
 Ngoài ra :
 
-            Đối với nhân viên Experience có thêm thuộc tính: Số năm kinh nghiệm (ExpInYear), Kỹ năng chuyên môn (ProSkill)
+- Đối với nhân viên **Experience** có thêm thuộc  tính: Số năm kinh nghiệm (ExpInYear), Kỹ năng chuyên môn (ProSkill)
 
-            Đối với nhân viênn Fresher có thêm thuộc tính: Thời gian tốt nghiệp(Graduation_date), Xếp loại tốt nghiệp (Graduation_rank) , Trường tốt nghiệp (Education)
+- Đối với nhân viênn **Fresher** có thêm thuộc tính: Thời gian tốt nghiệp(Graduation_date), Xếp loại tốt nghiệp (Graduation_rank) , Trường tốt nghiệp (Education)
 
-            Đối với nhân viên Intern có thêm thuộc tính: Chuyên ngành đang học (Majors), Học kì đang học (Semester), Tên trường đang học (University_name)
+- Đối với nhân viên **Intern** có thêm thuộc tính: Chuyên ngành đang học (Majors), Học kì đang học (Semester), Tên trường đang học (University_name)
 
-Lưu ý: Tùy mỗi loại nhân viên, phương thức showMe sẽ được bổ sung thêm các thuộc tính của riêng loại nhân viên đó.
+**Lưu ý:** Tùy mỗi loại nhân viên, phương thức **showMe** sẽ được bổ sung thêm các thuộc tính của riêng loại nhân viên đó.
 
-** Ngoài ra mỗi nhân viên khi vào làm cần phải nộp bằng cấp nghề nghiệp đi kèm, bộ phận tuyển dụng cần quản lý các bằng cấp này. Một nhân viên có thể có nhiều bằng cấp (Certificate)
+** Ngoài ra mỗi nhân viên khi vào làm cần phải nộp bằng cấp nghề nghiệp đi kèm, bộ phận tuyển dụng cần quản lý các bằng cấp này. **Một nhân viên có thể có nhiều bằng cấp (Certificate)**
 
-Với mỗi bằng cấp có các thông tin bao gồm : CertificatedID, CertificateName, CertificateRank, CertificatedDate.
+Với mỗi bằng cấp có các thông tin bao gồm : **CertificatedID, CertificateName, CertificateRank, CertificatedDate.**
 
 Yêu cầu
 
-1. Hãy thiết kế và viết code của chương trình trên làm sao để tuân thủ theo đúng mô hình OOP đã học, áp dụng đầy đủ 4 tính chất : bao đóng (encapsulation) , kế thừa (inheritance) , đa hình (polymorphism) , trừu tượng (abstraction).
+1. Hãy thiết kế và viết code của chương trình trên làm sao để tuân thủ theo đúng mô hình **OOP** đã học, áp dụng đầy đủ 4 tính chất : bao đóng (encapsulation) , kế thừa (inheritance) , đa hình (polymorphism) , trừu tượng (abstraction).
 2. Xác định và viết code constructor cho tất cả các class.
-3. Xác định và viết code cho các abstract method, abstract class, override/overload method, static field.
+3. Xác định và viết code cho các **abstract method, abstract class, override/overload method, static field.**
 4. Xác định Is A, Has A relationship trong phần thiết kế code đã viết ở trên.
-5. Sử dụng và giải thích được ý nghĩa của 2 keyword: super, this trong phần thiết kế code ở trên.
-6. Hãy giải thích ý nghĩa của toán tử instanceof, hãy ứng dụng instanceof để downcasting 1 object Employee trở thành các object Experience, Fresher hoặc intern trong các yêu cầu 2, yêu cầu 3, yêu cầu 4 bên dưới.
+5. Sử dụng và giải thích được ý nghĩa của 2 keyword: **super**, **this** trong phần thiết kế code ở trên.
+6. Hãy giải thích ý nghĩa của toán tử instanceof, hãy ứng dụng instanceof để downcasting 1 object **Employee trở thành các object Experience, Fresher hoặc Intern** trong các yêu cầu 2, yêu cầu 3, yêu cầu 4 bên dưới.
 7. Viết chức năng cho phép thêm, sửa (Nhập ID để xác định một nhân viên, nếu tồn tại cho phép người dùng chỉnh sửa thông tin của nhân viên), xóa(xóa theo ID) các loại nhân viên trên.
 8. Viết các hàm kiểm tra tính hợp lệ của ngày sinh, email, tên và số điện thoại của nhân viên. Áp dụng các hàm này vào chức năng số 7.
 9. Viết chương trình tìm tất cả các nhân viên intern.
@@ -221,31 +237,31 @@ Yêu cầu
 # Bài 14
 Viết chương trình quản lý việc tuyển sinh viên sau khi tốt nghiệp đại học.
 
-Có 2 loại sinh viên bao gồm sinh viên tốt nghiệp loại khá giỏi (GoodStudent) và sinh viên tốt nghiệp loại trung bình (NormalStudent).
+Có 2 loại sinh viên bao gồm **sinh viên tốt nghiệp loại khá giỏi (GoodStudent) và sinh viên tốt nghiệp loại trung bình (NormalStudent).**
 
-Cả 2 loại sinh viên trên đều phải cung cấp các thông tin sau khi nộp hồ sơ xin việc: Họ tên (fullName), Ngày tháng năm sinh (doB), Giới tính (sex), Số điện thoại (phoneNumber), Tên trường đã học (universityName), Xếp loại tốt nghiệp (gradeLevel).
+Cả 2 loại sinh viên trên đều phải cung cấp các thông tin sau khi nộp hồ sơ xin việc: Họ tên **(fullName)**, Ngày tháng năm sinh **(doB)**, Giới tính **(sex)**, Số điện thoại **(phoneNumber)**, Tên trường đã học **(universityName)**, Xếp loại tốt nghiệp **(gradeLevel)**.
 
-Riêng sinh viên loại khá giỏi phải có thêm thông tin: điểm trung bình học tập (gpa) theo thang điểm 10, tên của loại học bổng (hoặc giải thưởng) cao nhất đã từng giành được (bestRewardName).
+Riêng sinh viên loại khá giỏi phải có thêm thông tin: điểm trung bình học tập **(gpa)** theo thang điểm 10, tên của loại học bổng (hoặc giải thưởng) cao nhất đã từng giành được **(bestRewardName)**.
 
-Riêng sinh viên loại trung bình thì phải có thêm các thông tin: điểm TOEIC (englishScore), điểm thi đầu vào chuyên môn do công ty tổ chức thi (entryTestScore) theo thang điểm 10.
+Riêng sinh viên loại trung bình thì phải có thêm các thông tin: điểm TOEIC **(englishScore)**, điểm thi đầu vào chuyên môn do công ty tổ chức thi **(entryTestScore)** theo thang điểm 10.
 
-Yêu cầu 1:
+**Yêu cầu 1:**
 
-            Thí sinh hãy thiết kế và viết code thể hiện các class của các sinh viên và lớp học của chương trình làm sao để tuân thủ theo mô hình OOP đã học, áp dụng 4 tính chất : bao đóng (encapsulation) , kế thừa (inheritance) , đa hình (polymorphism) , trừu tượng (abstraction).
+- Thí sinh hãy thiết kế và viết code thể hiện các class của các **sinh viên** và lớp học của chương trình làm sao để tuân thủ theo mô hình **OOP** đã học, áp dụng 4 tính chất : bao đóng (encapsulation) , kế thừa (inheritance) , đa hình (polymorphism) , trừu tượng (abstraction).
 
-            Lưu ý: Bất kì một sinh viên nào cũng cần có một phương thức có tên là ShowMyInfor để hiển thị thông tin của sinh viên đó ra màn hình cosole, yêu cầu này là bắt buộc với các thành viên xây dựng code cho chương trình này. Bạn hãy lưu ý khi thiết kế code để thỏa mãn yêu cầu này.
+- Lưu ý: Bất kì một sinh viên nào cũng cần có một phương thức có tên là **ShowMyInfor** để hiển thị thông tin của sinh viên đó ra màn hình cosole, yêu cầu này là bắt buộc với các thành viên xây dựng code cho chương trình này. Bạn hãy lưu ý khi thiết kế code để thỏa mãn yêu cầu này.
 
-Yêu Cầu 2 : Kiểm tra ràng buộc dữ liệu cho chương trình. Dữ liệu của các file input phải tuân thủ theo ràng buộc sau:
+**Yêu Cầu 2 :** Kiểm tra ràng buộc dữ liệu cho chương trình. Dữ liệu của các file input phải tuân thủ theo ràng buộc sau:
 
-– Họ tên sinh viên có chiều dài tối đa là 50 ký tự và tổi thiểu là 10 ký tự. Học viên cần tạo Exception tương ứng có tên là InvalidFullNameException (1 điểm).
+- Họ tên sinh viên có chiều dài tối đa là 50 ký tự và tổi thiểu là 10 ký tự. Học viên cần tạo Exception tương ứng có tên là InvalidFullNameException (1 điểm).
 
-– Chương trình phải bắt được lỗi sai định dạng ngày tháng năm đối với trường doB. doB phải theo định dạng dd/MM/YYYY. Học viên cần tạo Exception tương ứng có tên là InvalidDOBException (1 điểm).
+- Chương trình phải bắt được lỗi sai định dạng ngày tháng năm đối với trường doB. doB phải theo định dạng dd/MM/YYYY. Học viên cần tạo Exception tương ứng có tên là InvalidDOBException (1 điểm).
 
-– Số điện thoại: phải là chuỗi số có chiều dài 10 ký tự và phải bắt đầu bằng một trong các chuỗi số: 090, 098, 091, 031, 035 hoặc 038. Học viên cần tạo Exception tương ứng có tên là InvalidPhoneNumberException (1 điểm).
+- Số điện thoại: phải là chuỗi số có chiều dài 10 ký tự và phải **bắt đầu bằng một trong các chuỗi số: 090, 098, 091, 031, 035 hoặc 038.** Học viên cần tạo Exception tương ứng có tên là InvalidPhoneNumberException (1 điểm).
 
-– Ngoài ra nếu có bất cứ một exception nào khác trong quá trình thực thi chương trình, thí sinh hãy thông báo ra màn hình nội dung “Input files have unknow errors !!!”  (0.5 điểm).
+- Ngoài ra nếu có bất cứ một exception nào khác trong quá trình thực thi chương trình, thí sinh hãy thông báo ra màn hình nội dung “Input files have unknow errors !!!”  (0.5 điểm).
 
-Yêu cầu 3: Chương trình cần có chức năng lựa chọn ứng viên trúng tuyển vào công ty theo nguyên tắc sau:
+**Yêu cầu 3:** Chương trình cần có chức năng lựa chọn ứng viên trúng tuyển vào công ty theo nguyên tắc sau:
 
 - Người dùng sẽ nhập vào số lượng sinh viên cần tuyển dụng (tối thiểu là 11, tối đa là 15).
 - Chương trình sẽ tự động chọn ra ứng viên phù hợp cho công ty theo các bước như sau:
@@ -253,12 +269,12 @@ Yêu cầu 3: Chương trình cần có chức năng lựa chọn ứng viên tr
   - Nếu số lượng ứng viên là sinh viên khá giỏi ít hơn hoặc bằng số lượng cần tuyển thì nhận hết sinh viên khá giỏi.
   - Sau khi tuyển hết ứng viên khá giỏi, nếu vẫn chưa đủ số lượng cần tuyển, chương trình sẽ lấy ứng viên trung bình. Các ứng viên trung bình được xét ưu tiên theo điểm thi đầu vào, nếu điểm thi đầu vào bằng nhau thì xét đến điểm TOEIC. Nếu xuất hiện ứng viên trung bình có cùng điểm TOEIC thì xét ưu tiên theo họ tên.
 
-Yêu cầu 4: Chương trình có thể hiển thị được thông tin họ tên và số điện thoại của tất cả các sinh viên đã nhập vào hệ thống (yêu cầu dùng collection sort để sắp xếp giảm dần theo fullName và tăng dần theo phoneNumber đối với sinh viên trước khi hiển thị).
+**Yêu cầu 4:** Chương trình có thể hiển thị được thông tin họ tên và số điện thoại của tất cả các sinh viên đã nhập vào hệ thống (yêu cầu dùng collection sort để sắp xếp giảm dần theo **fullName** và tăng dần theo **phoneNumber** đối với sinh viên trước khi hiển thị).
 
 # Bài 15
 Xây dựng chương trình quản lý kết quả học tập của sinh viên tại một trường đại học. Có 2 loại sinh viên là sinh viên chính quy và sinh viên tại chức với các thông tin giống nhau: mã sinh viên, họ tên, ngày tháng năm sinh, năm vào học, điểm đầu vào và danh sách kết quả học tập. Sinh viên tại chức có thêm thông tin nơi liên kết đào tạo(Đồng Nai, Cà Mau, …). Khoa gồm có các thông tin: tên khoa và danh sách sinh viên đang theo học. Kết quả học tập gồm có tên học kỳ, điểm trung bình học kỳ đó.
 
-Hiện thực các yêu cầu sau:
+**Hiện thực các yêu cầu sau:**
 Vẽ class diagram cho phát biểu bài toán trên OOP:
 
 1. Hiện thực các lớp cần thiết cho bài toán trên
